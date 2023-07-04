@@ -1,0 +1,244 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: inter-regular, Arial, sans-serif;
+  -ms-overflow-style: scrollbar !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -webkit-overflow-scrolling: auto;
+  background: rgba(255, 255, 255, 0.64);
+  font-size: 14px;
+  line-height: 1.43;
+  color: #333;
+}
+.container {
+  margin: 0;
+  padding: 0 24px;
+  padding-right: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.col-1 {
+  position: relative;
+}
+
+.col-1 form {
+  text-align: center;
+}
+.col-2 {
+  background-image: url("/img.jpg");
+  background-color: transparent;
+  min-height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #2b2b2b;
+  width: auto;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+}
+@media (max-width: 930px) {
+  .col-2 {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 2200px) {
+  .container {
+    grid-template-columns: 1.75fr 1fr;
+  }
+}
+.autor {
+  font-family: inter-regular, Arial, sans-serif;
+  font-size: 14px;
+  text-align: end;
+  padding-right: 14px;
+}
+.titulo {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+}
+.side-info.content {
+  text-align: left;
+  height: 100%;
+  display: table;
+  background-color: #6a6a6a;
+  color: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.logo {
+  padding-top: 24px;
+}
+.logo > p {
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  color: #6a6a6a;
+  padding-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+h1.login-title,
+h4 {
+  color: #6a6a6a;
+  padding: 10px 0 5px;
+  margin: 5px 0;
+  letter-spacing: 0.4px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.login-form {
+  max-width: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form > * {
+  width: 100%;
+}
+
+.input {
+  margin: 20px 16px 2px !important;
+  width: 100%;
+}
+
+input:active {
+  border-bottom: 2px solid #f60 !important;
+}
+.checkbox {
+  padding-left: 14px;
+  float: left;
+  color: #6a6a6a;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.checkbox input:checked {
+  background-color: #f60;
+}
+.checkbox label {
+  cursor: pointer;
+}
+.MuiInput-root {
+  font-size: 1.1rem !important;
+}
+.MuiInputLabel-root {
+  font-size: 1.2rem !important;
+  letter-spacing: 1px !important;
+  color: #7e7e7e !important;
+}
+
+.btn {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 4.5px;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1.42;
+  background-color: #f60;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn.disabled,
+.btn.disabled:focus,
+.btn:disabled {
+  background-color: #ededed;
+  color: #6a6a6a;
+  cursor: not-allowed;
+  pointer-events: inherit;
+  outline: 0;
+  opacity: initial;
+}
+
+.links {
+  max-width: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link {
+  background-color: transparent;
+  color: #f60;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-terms {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: #6a6a6a;
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+}
+.footer-terms a {
+  color: #6a6a6a;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-terms p {
+  padding: 1px;
+  margin: 0;
+}
+
+@media (max-width: 630px) {
+  .dont-display-630 {
+    display: none;
+  }
+}
